@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:drone_app/constants/colors.dart';
+import 'package:drone_app/constants/images.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -58,7 +59,22 @@ class HomePage extends StatelessWidget {
             ),
           ),
           Row(
-            children: [],
+            children: [
+              Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Image(
+                    image: Images.timeImage,
+                  ),
+                  Image(
+                    image: Images.droneKart,
+                  ),
+                ],
+              ),
+              Image(
+                image: Images.profile,
+              )
+            ],
           )
         ],
       ),
